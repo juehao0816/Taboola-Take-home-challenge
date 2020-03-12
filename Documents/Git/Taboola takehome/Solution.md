@@ -14,7 +14,7 @@ public Integer convertString(String input) {
 		return res;
 	}
 // Time Complexity: O(n) since toCharArray method will take O(n) time and for loop will take another O(n) time.
-// Space Complexity: O(n) since inPutArray will take O(n) extra space.
+// Space Complexity: O(1)
 ```
 
 \
@@ -34,7 +34,7 @@ public boolean findInteger(String input) {
 		return false;
 	}
 // Time Complexity: The worst case is O(n) since we have to loop through the inputArray.
-//Space Complexity: O(n) since inPutArray will take O(n) extra space.
+//Space Complexity: O(1)
 ```
 \
 **Please design two new tables to store information about: a. products
