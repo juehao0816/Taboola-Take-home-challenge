@@ -6,10 +6,9 @@ public Integer convertString(String input) {
 		if (input == null || input.length() == 0) {
 			return null;
 		}
-		char[] inputArray = input.toCharArray();
 		Integer res = 0;
-		for (int i = 0; i < inputArray.length; i++) {
-			res = 10 * res + (inputArray[i] - '0');
+		for (int i = 0; i < input.length(); i++) {
+			res = 10 * res + (input.charAt(i) - '0');
 		}
 		return res;
 	}
@@ -25,9 +24,8 @@ Example: input value “45222” return true, input value “This Is A Test4me�
 
 ```JAVA
 public boolean findInteger(String input) {
-		char[] inputArray = input.toCharArray();
-		for (char i : inputArray) {
-			if (i >= '0' && i <= '9') {
+		for (int i = 0; i < input.length(); i++) {
+			if (input.charAt(i) >= '0' && input.charAt(i) <= '9') {
 				return true;
 			}
 		}
